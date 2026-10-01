@@ -2,7 +2,7 @@ class BinjadAT6010601 < Formula
   desc "Headless Binary Ninja MCP server"
   homepage "https://github.com/0cyn/binjad"
   url "https://github.com/0cyn/binjad.git",
-      revision: "0c8d9f1d1ccdb92c7652ba1feaf950cf38c83387",
+      revision: "1af14e31e031ccb50a000e2adb1432c130f57fa9",
       using:    :git
   version "0.1.0"
   license "BSD-3-Clause"
@@ -44,6 +44,7 @@ class BinjadAT6010601 < Formula
     return unless OS.linux?
 
     runtime = libexec/"binjad-runtime"
+    # Binary Ninja remains external; the launcher preloads these validated user-owned libraries.
     %w[
       libbinaryninjacore.so.1
       libdebuggercore.so
