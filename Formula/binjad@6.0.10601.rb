@@ -9,10 +9,9 @@ class BinjadAT6010601 < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/0cyn/tap"
-    rebuild 1
-    sha256 arm64_tahoe:  "3f0502da6647b80a2f2678faf8e96ce3e67ee6604ddc9c6bb2558d3d6ce37920"
-    sha256 arm64_linux:  "e8f45d5c03d35d3893d30cb266f139869b27cc8458fed668c9a72dff103a2b2a"
-    sha256 x86_64_linux: "28eea9a83f85e512a3a4d1c7bdd16c5c125c0d55b8afd712a592047d96a19719"
+    sha256 arm64_tahoe:  "fa2f58dec8f15a7a9e48b51a8f1c9046a7b2335b8f359e0d1c88b6ebca260492"
+    sha256 arm64_linux:  "0788f5c3fb520fe81c6571b5cfc3a37e423f658c32b39f6b7f3a051fb61a1b96"
+    sha256 x86_64_linux: "4b2c08193f9f72d537ccbbd64933fdfb00a596d1415f0233269ffc756663bc99"
   end
 
   keg_only :versioned_formula
