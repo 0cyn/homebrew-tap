@@ -2,17 +2,10 @@ class BinjadAT6010601 < Formula
   desc "Headless Binary Ninja MCP server"
   homepage "https://github.com/0cyn/binjad"
   url "https://github.com/0cyn/binjad.git",
-      revision: "f1d33dbf4bbb5d6ff8e0c84261860692ecfdea62",
+      revision: "4864b00a2d9ca224c00c45d162bc1e98002526b5",
       using:    :git
-  version "0.1.1"
+  version "0.2.0"
   license "BSD-3-Clause"
-
-  bottle do
-    root_url "https://ghcr.io/v2/0cyn/tap"
-    sha256 arm64_tahoe:  "fa2f58dec8f15a7a9e48b51a8f1c9046a7b2335b8f359e0d1c88b6ebca260492"
-    sha256 arm64_linux:  "0788f5c3fb520fe81c6571b5cfc3a37e423f658c32b39f6b7f3a051fb61a1b96"
-    sha256 x86_64_linux: "4b2c08193f9f72d537ccbbd64933fdfb00a596d1415f0233269ffc756663bc99"
-  end
 
   keg_only :versioned_formula
 
@@ -125,6 +118,8 @@ class BinjadAT6010601 < Formula
     assert_predicate bin/"binjad", :executable?
     assert_predicate libexec/"binjad-runtime", :executable?
     assert_path_exists share/"binjad/portal/index.html"
+    assert_path_exists share/"binjad/portal/setup.html"
+    assert_path_exists share/"binjad/portal/setup.js"
 
     %w[binaryninjacore kernelcache sharedcache debuggercore].each do |library|
       assert_empty prefix.glob("**/*#{library}*")
