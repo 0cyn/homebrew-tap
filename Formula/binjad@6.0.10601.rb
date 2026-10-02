@@ -2,9 +2,9 @@ class BinjadAT6010601 < Formula
   desc "Headless Binary Ninja MCP server"
   homepage "https://github.com/0cyn/binjad"
   url "https://github.com/0cyn/binjad.git",
-      revision: "1af14e31e031ccb50a000e2adb1432c130f57fa9",
+      revision: "f1d33dbf4bbb5d6ff8e0c84261860692ecfdea62",
       using:    :git
-  version "0.1.0"
+  version "0.1.1"
   license "BSD-3-Clause"
 
   bottle do
