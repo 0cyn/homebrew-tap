@@ -38,6 +38,7 @@ class BinjadAT6010601 < Formula
     return unless OS.linux?
 
     runtime = libexec/"binjad-runtime"
+    # Binary Ninja stays external; the launcher supplies the validated user-installed runtime libraries.
     %w[
       libbinaryninjacore.so.1
       libdebuggercore.so
