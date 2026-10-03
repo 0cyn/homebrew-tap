@@ -1,16 +1,16 @@
 {
-  "binjadVersion": "0.2.0",
+  "binjadVersion": "0.2.1",
   "formulaRevision": 0,
   "formulas": {
     "6.0.10601": {
       "apiRevision": "2ddf304b3275aa184e95570404539cbc4beb64c6",
       "channel": "stable",
-      "sourceRevision": "4864b00a2d9ca224c00c45d162bc1e98002526b5"
+      "sourceRevision": "b41f2b0e37fd34900e87ca6de7010ddfd9c49910"
     },
     "6.1.10811": {
       "apiRevision": "5a6196f324051554d4219f3ac5ac943a65aa7716",
       "channel": "dev",
-      "sourceRevision": "53e89ba4c450cc126403c8407e02f0fbb83aae9f"
+      "sourceRevision": "bbba01903310e1db7babec45b1b83fe284f8cdeb"
     }
   },
   "latestDev": "6.1.10811",

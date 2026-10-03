@@ -2,17 +2,10 @@ class BinjadAT6010601 < Formula
   desc "Headless Binary Ninja MCP server"
   homepage "https://github.com/0cyn/binjad"
   url "https://github.com/0cyn/binjad.git",
-      revision: "4864b00a2d9ca224c00c45d162bc1e98002526b5",
+      revision: "b41f2b0e37fd34900e87ca6de7010ddfd9c49910",
       using:    :git
-  version "0.2.0"
+  version "0.2.1"
   license "BSD-3-Clause"
-
-  bottle do
-    root_url "https://ghcr.io/v2/0cyn/tap"
-    sha256 arm64_tahoe:  "09143c58570ff5ff5344503b4f2ce2c108163e9b91f1b1ed0e69289629489403"
-    sha256 arm64_linux:  "f10997b0339fdcb5e8f3ad45b5e62c80285b52b467a54f960a96b015b16d67b9"
-    sha256 x86_64_linux: "a95c46bbb2c17179d74c373e2333dc5af19bc17d4e31bb1e3bbdf4cdf8a69552"
-  end
 
   keg_only :versioned_formula
 
@@ -45,7 +38,6 @@ class BinjadAT6010601 < Formula
     return unless OS.linux?
 
     runtime = libexec/"binjad-runtime"
-    # Binary Ninja remains external; the launcher preloads these validated user-owned libraries.
     %w[
       libbinaryninjacore.so.1
       libdebuggercore.so
