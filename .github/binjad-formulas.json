@@ -1,0 +1,19 @@
+{
+  "binjadVersion": "0.2.0",
+  "formulaRevision": 0,
+  "formulas": {
+    "6.0.10601": {
+      "apiRevision": "2ddf304b3275aa184e95570404539cbc4beb64c6",
+      "channel": "stable",
+      "sourceRevision": "4864b00a2d9ca224c00c45d162bc1e98002526b5"
+    },
+    "6.1.10811": {
+      "apiRevision": "5a6196f324051554d4219f3ac5ac943a65aa7716",
+      "channel": "dev",
+      "sourceRevision": "53e89ba4c450cc126403c8407e02f0fbb83aae9f"
+    }
+  },
+  "latestDev": "6.1.10811",
+  "schema": 1,
+  "stable": "6.0.10601"
+}

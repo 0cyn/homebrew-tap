@@ -43,6 +43,12 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Validate binjad formula matrix
+        run: |
+          tap="$(brew --repository "$GITHUB_REPOSITORY")"
+          python3 "$tap/.github/scripts/CheckFormulaMatrixTests.py"
+          python3 "$tap/.github/scripts/CheckFormulaMatrix.py" "$tap"
+
       - name: Cache Homebrew Bundler RubyGems
         uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
