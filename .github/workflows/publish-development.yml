@@ -79,10 +79,10 @@ jobs:
           test -f "Formula/binjad@${binary_ninja_version}.rb"
           test "$(readlink Aliases/binjad-dev)" = "../Formula/binjad@${binary_ninja_version}.rb"
           test "$(jq -r '.latestDev' .github/binjad-formulas.json)" = "$binary_ninja_version"
-          test "$(jq -r --arg version "$binary_ninja_version" '.formulas[$version].channel' \
-            .github/binjad-formulas.json)" = dev
-          source_revision="$(jq -r --arg version "$binary_ninja_version" \
-            '.formulas[$version].sourceRevision' .github/binjad-formulas.json)"
+          test "$(BINARY_NINJA_VERSION="$binary_ninja_version" \
+            jq -r '.formulas[env.BINARY_NINJA_VERSION].channel' .github/binjad-formulas.json)" = dev
+          source_revision="$(BINARY_NINJA_VERSION="$binary_ninja_version" \
+            jq -r '.formulas[env.BINARY_NINJA_VERSION].sourceRevision' .github/binjad-formulas.json)"
           binjad_version="$(jq -r '.binjadVersion' .github/binjad-formulas.json)"
           [[ "$source_revision" =~ ^[0-9a-f]{40}$ ]]
           [[ "$binjad_version" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]
@@ -117,9 +117,11 @@ jobs:
           comparison="$(gh api "repos/$GITHUB_REPOSITORY/compare/$base_sha...$RUN_HEAD_SHA")"
           test "$(jq -r '.behind_by' <<<"$comparison")" = 0
 
-          echo "head_branch=$RUN_HEAD_BRANCH" >> "$GITHUB_OUTPUT"
-          echo "head_sha=$RUN_HEAD_SHA" >> "$GITHUB_OUTPUT"
-          echo "pull_request=$pull_request" >> "$GITHUB_OUTPUT"
+          {
+            echo "head_branch=$RUN_HEAD_BRANCH"
+            echo "head_sha=$RUN_HEAD_SHA"
+            echo "pull_request=$pull_request"
+          } >> "$GITHUB_OUTPUT"
           printf 'Validated PR #%s at `%s`.\n' "$pull_request" "$RUN_HEAD_SHA" >> "$GITHUB_STEP_SUMMARY"
 
   publish:
