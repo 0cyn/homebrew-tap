@@ -122,7 +122,7 @@ jobs:
             echo "head_sha=$RUN_HEAD_SHA"
             echo "pull_request=$pull_request"
           } >> "$GITHUB_OUTPUT"
-          printf 'Validated PR #%s at `%s`.\n' "$pull_request" "$RUN_HEAD_SHA" >> "$GITHUB_STEP_SUMMARY"
+          printf "Validated PR #%s at \`%s\`.\n" "$pull_request" "$RUN_HEAD_SHA" >> "$GITHUB_STEP_SUMMARY"
 
   publish:
     needs: validate
