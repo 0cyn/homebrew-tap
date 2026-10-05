@@ -9,8 +9,22 @@ on:
       head_sha:
         description: Expected pull request head commit SHA
         required: true
+  workflow_call:
+    inputs:
+      pull_request:
+        description: Pull request number
+        required: true
+        type: string
+      head_sha:
+        description: Expected pull request head commit SHA
+        required: true
+        type: string
 
 permissions: {}
+
+concurrency:
+  group: brew-pr-pull
+  cancel-in-progress: false
 
 defaults:
   run:
