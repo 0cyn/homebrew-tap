@@ -1,31 +1,31 @@
 {
-  "binjadVersion": "0.2.1",
+  "binjadVersion": "0.2.2",
   "formulaRevision": 0,
   "formulas": {
     "6.0.10601": {
       "apiRevision": "2ddf304b3275aa184e95570404539cbc4beb64c6",
       "channel": "stable",
-      "sourceRevision": "b41f2b0e37fd34900e87ca6de7010ddfd9c49910"
+      "sourceRevision": "9d3496d71fc08139c303dee9df8d3bb2bfb1f8a7"
     },
     "6.1.10811": {
       "apiRevision": "5a6196f324051554d4219f3ac5ac943a65aa7716",
       "channel": "dev",
-      "sourceRevision": "bbba01903310e1db7babec45b1b83fe284f8cdeb"
+      "sourceRevision": "9a3859f64ba1df08fb7fd3e2917ce7f79645d778"
     },
     "6.1.10815": {
       "apiRevision": "5a6196f324051554d4219f3ac5ac943a65aa7716",
       "channel": "dev",
-      "sourceRevision": "603e33d44df08691dd5442144ba39ad3ceb8fc4b"
+      "sourceRevision": "9a3859f64ba1df08fb7fd3e2917ce7f79645d778"
     },
     "6.1.10816": {
       "apiRevision": "5a6196f324051554d4219f3ac5ac943a65aa7716",
       "channel": "dev",
-      "sourceRevision": "dc65e55be445fdae8e1501a0547b78563b78dc7b"
+      "sourceRevision": "9a3859f64ba1df08fb7fd3e2917ce7f79645d778"
     },
     "6.1.10818": {
       "apiRevision": "bbcf12d2cec2bbc23d7d63f2e1eeb8a0c7dc2cbd",
       "channel": "dev",
-      "sourceRevision": "2eca0174bbf2fc7ca1a868fbded96adfb7720a83"
+      "sourceRevision": "ff4a7a539d12f3d76998dfaa23f29c39200d7ae8"
     }
   },
   "latestDev": "6.1.10818",
