@@ -41,9 +41,14 @@
       "apiRevision": "bc562771a3b34d44a0252df29414c45716801fa5",
       "channel": "dev",
       "sourceRevision": "b527b6a23a7e805b275335c23058395433e7f53b"
+    },
+    "6.1.10849": {
+      "apiRevision": "bc562771a3b34d44a0252df29414c45716801fa5",
+      "channel": "dev",
+      "sourceRevision": "4a2affc8aaa3fa811932c89c954926d1fb5dd2a7"
     }
   },
-  "latestDev": "6.1.10843",
+  "latestDev": "6.1.10849",
   "schema": 1,
   "stable": "6.0.10601"
 }
