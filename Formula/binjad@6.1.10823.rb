@@ -7,6 +7,13 @@ class BinjadAT6110823 < Formula
   version "0.2.3"
   license "BSD-3-Clause"
 
+  bottle do
+    root_url "https://ghcr.io/v2/0cyn/tap"
+    sha256 arm64_tahoe:  "844383df78c9d75fee4475631fca1335adf1282a675479a6f94af367046fc365"
+    sha256 arm64_linux:  "c7757c10111f38a982e55a8dbac29204b69c09c90f4a75b704c872ab1a603f4f"
+    sha256 x86_64_linux: "0cb6eb83e5b2c3fa6f77dfaee3c63d98930e77cf69a0e0385af197f1847bad53"
+  end
+
   keg_only :versioned_formula
 
   depends_on "cmake" => :build
