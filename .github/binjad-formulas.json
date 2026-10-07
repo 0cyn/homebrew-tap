@@ -1,56 +1,56 @@
 {
-  "binjadVersion": "0.2.2",
+  "binjadVersion": "0.2.3",
   "formulaRevision": 0,
   "formulas": {
     "6.0.10601": {
       "apiRevision": "2ddf304b3275aa184e95570404539cbc4beb64c6",
       "channel": "stable",
-      "sourceRevision": "9d3496d71fc08139c303dee9df8d3bb2bfb1f8a7"
+      "sourceRevision": "02733d9ffd432d7c678e35fd0428f2c6e49ef545"
     },
     "6.1.10811": {
       "apiRevision": "5a6196f324051554d4219f3ac5ac943a65aa7716",
       "channel": "dev",
-      "sourceRevision": "9a3859f64ba1df08fb7fd3e2917ce7f79645d778"
+      "sourceRevision": "d328ba95c674d34a2c39c97aeb084eab4585afce"
     },
     "6.1.10815": {
       "apiRevision": "5a6196f324051554d4219f3ac5ac943a65aa7716",
       "channel": "dev",
-      "sourceRevision": "9a3859f64ba1df08fb7fd3e2917ce7f79645d778"
+      "sourceRevision": "d328ba95c674d34a2c39c97aeb084eab4585afce"
     },
     "6.1.10816": {
       "apiRevision": "5a6196f324051554d4219f3ac5ac943a65aa7716",
       "channel": "dev",
-      "sourceRevision": "9a3859f64ba1df08fb7fd3e2917ce7f79645d778"
+      "sourceRevision": "d328ba95c674d34a2c39c97aeb084eab4585afce"
     },
     "6.1.10818": {
       "apiRevision": "bbcf12d2cec2bbc23d7d63f2e1eeb8a0c7dc2cbd",
       "channel": "dev",
-      "sourceRevision": "ff4a7a539d12f3d76998dfaa23f29c39200d7ae8"
+      "sourceRevision": "8f73292ca4e37f13d4a4fcf7f04ceee1381fef3f"
     },
     "6.1.10823": {
       "apiRevision": "f06fc633831a3dfb268a67230664b35669e63ed9",
       "channel": "dev",
-      "sourceRevision": "a954d31ef3901c7841d1272c8ec7aca298baa322"
+      "sourceRevision": "bd90d95f1cd6e78c2132c845150f6b680beed732"
     },
     "6.1.10832": {
       "apiRevision": "f06fc633831a3dfb268a67230664b35669e63ed9",
       "channel": "dev",
-      "sourceRevision": "0a465d370d8330b751fb5300305d89ec30f6f213"
+      "sourceRevision": "bd90d95f1cd6e78c2132c845150f6b680beed732"
     },
     "6.1.10843": {
       "apiRevision": "bc562771a3b34d44a0252df29414c45716801fa5",
       "channel": "dev",
-      "sourceRevision": "b527b6a23a7e805b275335c23058395433e7f53b"
+      "sourceRevision": "dbd1872f7d802a11d0be3a5f4e11e661ece4a910"
     },
     "6.1.10849": {
       "apiRevision": "bc562771a3b34d44a0252df29414c45716801fa5",
       "channel": "dev",
-      "sourceRevision": "4a2affc8aaa3fa811932c89c954926d1fb5dd2a7"
+      "sourceRevision": "dbd1872f7d802a11d0be3a5f4e11e661ece4a910"
     },
     "6.1.10853": {
       "apiRevision": "0623c6f791153696cdd5551c88c5b5a4a70ed16a",
       "channel": "dev",
-      "sourceRevision": "0d441b515b68df9acdafe42e8bbb3df909158e02"
+      "sourceRevision": "b624145bcf608fbf2c4024b51374e52531afcf28"
     }
   },
   "latestDev": "6.1.10853",
