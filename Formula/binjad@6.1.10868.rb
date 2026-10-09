@@ -2,17 +2,10 @@ class BinjadAT6110868 < Formula
   desc "Headless Binary Ninja MCP server"
   homepage "https://github.com/0cyn/binjad"
   url "https://github.com/0cyn/binjad.git",
-      revision: "1cf7dbca589eb9a45736919bc4cada7e8861c40d",
+      revision: "21d6005813802c7c26bb01f1fb564cf610f703a4",
       using:    :git
-  version "0.2.3"
+  version "0.3.0"
   license "BSD-3-Clause"
-
-  bottle do
-    root_url "https://ghcr.io/v2/0cyn/tap"
-    sha256 arm64_tahoe:  "c41d268411f600c960f6af62911b2792676b7eb3775f73da351e47672849bc2f"
-    sha256 arm64_linux:  "8ee3894a3735fc7df833e89dabbd2c70a0ceab180f97847e3fcaeeadc45af09d"
-    sha256 x86_64_linux: "1c5cdba28ff5f982060830d2d923ed6f07ee42b26302e3c3be4870df905aa17b"
-  end
 
   keg_only :versioned_formula
 
